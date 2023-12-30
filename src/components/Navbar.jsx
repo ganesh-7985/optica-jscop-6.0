@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <div className={`bg-[#211f39] sticky top-0 left-0 right-0 z-50 mx-auto px-4 py-3 md:py-0 text-white ${isScrolled ? 'shadow-md' : ''}`}>
       <div className="flex justify-between items-center">
-        <img className='h-16 w-auto text-xl font-bold text-[#7167e2]' src={logo1o} alt="Logo" />
+        <img className='h-16 w-auto text-xl font-bold text-[#7167e2]' src={logo1} alt="Logo" />
 
         <div className="md:hidden">
           <div onClick={handleNavToggle} className='cursor-pointer'>
