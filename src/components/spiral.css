@@ -1,0 +1,439 @@
+.game-loader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #111111;
+}
+
+.game-loader__btn:hover {
+    background: #11dbd9;
+}
+.game-loader__planet {
+    filter: url('#goo');
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+}
+.game-loader__planet::after {
+    content: '';
+    display: block;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background: #f0f3f3;
+    box-shadow: #11dbd9 0 0 24px 4px;
+    margin: 0 auto;
+    position: absolute;
+    top: 46vw;
+    left: 46vw;
+    animation: scale 8s linear infinite, color5 2s linear 1;
+}
+.game-loader__planet .loader-mini1 {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background: #11dbd9;
+    top: 48.5vw;
+    left: 48.5vw;
+    animation: move1 5s linear 1, color1 8s linear 1;
+}
+.game-loader__planet .loader-mini2 {
+    position: absolute;
+    width: 3.6vw;
+    height: 3.6vw;
+    border-radius: 50%;
+    background: #11dbd9;
+    top: 48.5vw;
+    left: 48.5vw;
+    animation: move2 6s linear 1, color2 9s linear 1;
+}
+.game-loader__planet .loader-mini3 {
+    position: absolute;
+    width: 4.2vw;
+    height: 4.2vw;
+    border-radius: 50%;
+    background: #11dbd9;
+    top: 48.5vw;
+    left: 48.5vw;
+    animation: move3 7s linear 1, color3 10s linear 1;
+}
+.game-loader__planet .loader-mini4 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    border-radius: 50%;
+    background: #11dbd9;
+    top: 48.5vw;
+    left: 48.5vw;
+    animation: move4 8s linear 1, color4 11s linear 1;
+}
+.game-loader__planet .loader-radius1 {
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    border: 0.5px solid #11dbd9;
+    opacity: 0.2;
+    background: transparent;
+    top: 44vw;
+    left: 44vw;
+    transform: scale(0);
+    animation: orbit1 5s linear 1;
+}
+.game-loader__planet .loader-radius2 {
+    position: absolute;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 50%;
+    border: 0.5px solid #11dbd9;
+    opacity: 0.2;
+    background: transparent;
+    transform: scale(0);
+    top: 41vw;
+    left: 41vw;
+    animation: orbit2 6s linear 1;
+}
+.game-loader__planet .loader-radius3 {
+    position: absolute;
+    width: 24vw;
+    height: 24vw;
+    border-radius: 50%;
+    border: 0.5px solid #11dbd9;
+    opacity: 0.2;
+    background: transparent;
+    transform: scale(0);
+    top: 38vw;
+    left: 38vw;
+    animation: orbit3 7s linear 1;
+}
+.game-loader__planet .loader-radius4 {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    border: 0.5px solid #11dbd9;
+    opacity: 0.2;
+    background: transparent;
+    transform: scale(0);
+    top: 35vw;
+    left: 35vw;
+    animation: orbit4 8s linear 1;
+}
+.game-loader__planet--color .loader-mini1 {
+    background: #0fc3c2;
+}
+.game-loader__planet--color .loader-mini2 {
+    background: #0dacaa;
+}
+.game-loader__planet--color .loader-mini3 {
+    background: #0b9493;
+}
+.game-loader__planet--color .loader-mini4 {
+    background: #0a7c7b;
+}
+.btn-play {
+    left: 41vw;
+}
+@keyframes move1 {
+    0% {
+        transform: skewX(5deg) rotate(0deg) translateY(0em) rotate(0deg) skewX(-5deg) rotate(0deg);
+   }
+    10% {
+        transform: skewX(5deg) rotate(180deg) translateY(-6vw) rotate(-180deg) skewX(-5deg) rotate(180deg);
+   }
+    25% {
+        transform: skewX(5deg) rotate(360deg) translateY(-12vw) rotate(-360deg) skewX(-5deg) rotate(360deg);
+   }
+    50% {
+        transform: skewX(5deg) rotate(720deg) translateY(-12vw) rotate(720deg) skewX(-5deg) rotate(720deg);
+   }
+    75% {
+        transform: skewX(5deg) rotate(1080deg) translateY(-12vw) rotate(-1080deg) skewX(-5deg) rotate(1080deg);
+   }
+    90% {
+        transform: skewX(5deg) rotate(1260deg) translateY(-6vw) rotate(-1260deg) skewX(-5deg) rotate(1260deg);
+   }
+    100% {
+        transform: skewX(5deg) rotate(1440deg) translateY(0em) rotate(-1440deg) skewX(-5deg) rotate(1440deg);
+   }
+}
+@keyframes move2 {
+    0% {
+        transform: skewX(5deg) rotate(0deg) translateY(0em) rotate(0deg) skewX(-5deg) rotate(0deg);
+   }
+    10% {
+        transform: skewX(5deg) rotate(180deg) translateY(-9vw) rotate(-180deg) skewX(-5deg) rotate(180deg);
+   }
+    25% {
+        transform: skewX(5deg) rotate(360deg) translateY(-18vw) rotate(-360deg) skewX(-5deg) rotate(360deg);
+   }
+    50% {
+        transform: skewX(5deg) rotate(720deg) translateY(-18vw) rotate(720deg) skewX(-5deg) rotate(720deg);
+   }
+    75% {
+        transform: skewX(5deg) rotate(1080deg) translateY(-18vw) rotate(-1080deg) skewX(-5deg) rotate(1080deg);
+   }
+    90% {
+        transform: skewX(5deg) rotate(1260deg) translateY(-9vw) rotate(-1260deg) skewX(-5deg) rotate(1260deg);
+   }
+    100% {
+        transform: skewX(5deg) rotate(1440deg) translateY(0em) rotate(-1440deg) skewX(-5deg) rotate(1440deg);
+   }
+}
+@keyframes move3 {
+    0% {
+        transform: skewX(5deg) rotate(0deg) translateY(0em) rotate(0deg) skewX(-5deg) rotate(0deg);
+   }
+    10% {
+        transform: skewX(5deg) rotate(180deg) translateY(-12vw) rotate(-180deg) skewX(-5deg) rotate(180deg);
+   }
+    25% {
+        transform: skewX(5deg) rotate(360deg) translateY(-24vw) rotate(-360deg) skewX(-5deg) rotate(360deg);
+   }
+    50% {
+        transform: skewX(5deg) rotate(720deg) translateY(-24vw) rotate(720deg) skewX(-5deg) rotate(720deg);
+   }
+    75% {
+        transform: skewX(5deg) rotate(1080deg) translateY(-24vw) rotate(-1080deg) skewX(-5deg) rotate(1080deg);
+   }
+    90% {
+        transform: skewX(5deg) rotate(1260deg) translateY(-12vw) rotate(-1260deg) skewX(-5deg) rotate(1260deg);
+   }
+    100% {
+        transform: skewX(5deg) rotate(1440deg) translateY(0em) rotate(-1440deg) skewX(-5deg) rotate(1440deg);
+   }
+}
+@keyframes move4 {
+    0% {
+        transform: skewX(5deg) rotate(0deg) translateY(0em) rotate(0deg) skewX(-5deg) rotate(0deg);
+   }
+    10% {
+        transform: skewX(5deg) rotate(180deg) translateY(-15vw) rotate(-180deg) skewX(-5deg) rotate(180deg);
+   }
+    25% {
+        transform: skewX(5deg) rotate(360deg) translateY(-30vw) rotate(-360deg) skewX(-5deg) rotate(360deg);
+   }
+    50% {
+        transform: skewX(5deg) rotate(720deg) translateY(-30vw) rotate(720deg) skewX(-5deg) rotate(720deg);
+   }
+    75% {
+        transform: skewX(5deg) rotate(1080deg) translateY(-30vw) rotate(-1080deg) skewX(-5deg) rotate(1080deg);
+   }
+    90% {
+        transform: skewX(5deg) rotate(1260deg) translateY(-15vw) rotate(-1260deg) skewX(-5deg) rotate(1260deg);
+   }
+    100% {
+        transform: skewX(5deg) rotate(1440deg) translateY(0em) rotate(-1440deg) skewX(-5deg) rotate(1440deg);
+   }
+}
+@keyframes scale {
+    0% {
+        transform: scale(1.5);
+   }
+    50% {
+        transform: scale(1);
+   }
+    100% {
+        transform: scale(1.5);
+   }
+}
+@keyframes orbit1 {
+    0% {
+        transform: scale(0);
+   }
+    10% {
+        transform: scale(1);
+   }
+    25% {
+        transform: scale(2.2);
+   }
+    35% {
+        transform: scale(2.1);
+   }
+    50% {
+        transform: scale(2);
+   }
+    65% {
+        transform: scale(2.1);
+   }
+    75% {
+        transform: scale(2);
+   }
+    90% {
+        transform: scale(1);
+   }
+    100% {
+        transform: scale(0);
+   }
+}
+@keyframes orbit2 {
+    0% {
+        transform: scale(0);
+   }
+    10% {
+        transform: scale(1);
+   }
+    25% {
+        transform: scale(2.2);
+   }
+    35% {
+        transform: scale(2.1);
+   }
+    50% {
+        transform: scale(2);
+   }
+    65% {
+        transform: scale(2.1);
+   }
+    75% {
+        transform: scale(2);
+   }
+    90% {
+        transform: scale(1);
+   }
+    100% {
+        transform: scale(0);
+   }
+}
+@keyframes orbit3 {
+    0% {
+        transform: scale(0);
+   }
+    10% {
+        transform: scale(1);
+   }
+    25% {
+        transform: scale(2.2);
+   }
+    35% {
+        transform: scale(2.1);
+   }
+    50% {
+        transform: scale(2);
+   }
+    65% {
+        transform: scale(2.1);
+   }
+    75% {
+        transform: scale(2);
+   }
+    90% {
+        transform: scale(1);
+   }
+    100% {
+        transform: scale(0);
+   }
+
+}
+@keyframes orbit4 {
+    0% {
+        transform: scale(0);
+   }
+    10% {
+        transform: scale(1);
+   }
+    25% {
+        transform: scale(2.2);
+   }
+    35% {
+        transform: scale(2.1);
+   }
+    50% {
+        transform: scale(2);
+   }
+    65% {
+        transform: scale(2.1);
+   }
+    75% {
+        transform: scale(2);
+   }
+    90% {
+        transform: scale(1);
+   }
+    100% {
+        transform: scale(0);
+   }
+}
+@keyframes color1 {
+    10% {
+        background: #11dbd9;
+   }
+    50% {
+        background: #ff217b;
+   }
+    90% {
+        background: #11dbd9;
+   }
+}
+@keyframes color2 {
+    10% {
+        background: #11dbd9;
+   }
+    50% {
+        background: #ff7878;
+   }
+    90% {
+        background: #11dbd9;
+   }
+}
+@keyframes color3 {
+    10% {
+        background: #11dbd9;
+   }
+    50% {
+        background: #ffa283;
+   }
+    90% {
+        background: #11dbd9;
+   }
+}
+@keyframes color4 {
+    10% {
+        background: #11dbd9;
+   }
+    50% {
+        background: #962a4e;
+   }
+    90% {
+        background: #11dbd9;
+   }
+}
+@keyframes color5 {
+    10% {
+        background: #11dbd9;
+        box-shadow: #11dbd9 0 0 24px 4px;
+   }
+    50% {
+        background: #13c2d3;
+        box-shadow: #13c2d3 0 0 24px 4px;
+   }
+    90% {
+        background: #11dbd9;
+        box-shadow: #11dbd9 0 0 24px 4px;
+   }
+}
+.game-loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+svg {
+    position: absolute;
+    z-index: -100;
+    pointer-events: none;
+}

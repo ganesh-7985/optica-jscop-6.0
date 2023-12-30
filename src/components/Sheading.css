@@ -1,0 +1,18 @@
+
+.heading {
+    text-align: center;
+    font-size: 2em;
+   font-weight: bold;
+    margin-top:200px;
+    margin-bottom:10px;
+    color: #1923aa;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+  }
+  
+  body {
+    background-color:rgba(8, 8, 8, 1); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
