@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "./utils";
+import logo1 from '../images/logo1.png'
 
 
 const ParticleRing = () => {
@@ -57,7 +58,7 @@ const ParticleRing = () => {
         <div className="flex flex-col items-center">
           <img
             className="w-72 md:w-96  text-slate-200 font-medium text-lg md:text-4xl pointer-events-none"
-            src="src/images/logo1.png"
+            src={logo1}
             alt="Logo"
           />
           <h1 className="text-slate-200 text-3xl md:text-6xl pointer-events-none font-extrabold">
