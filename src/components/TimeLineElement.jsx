@@ -3,7 +3,7 @@
     {
       id:1,
       title:"INAUGURATION CEREMONY",
-      url: "https://media.istockphoto.com/id/845016748/photo/stage.jpg?s=612x612&w=0&k=20&c=pwh6-fu-B-rgEiT6YDAd696wORPB5w3o3BXTpiOeTEA=",
+      url: "https://cdndailyexcelsior.b-cdn.net/wp-content/uploads/2023/05/page8-7-4.jpg",
       time: "10:00 AM-10:30 AM",
       location: "LT-4",
       

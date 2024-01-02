@@ -5,6 +5,7 @@ import TiltCard from './TiltCard';
 import MouseTrail from './MouseImageTrail';
 import HorizontalScrollCarousel from './HorizontalScrollCarousel';
 import TimeLine from './TimeLine';
+import Footer from './Footer';
 
 export default function Homepage() {
   return (
@@ -18,6 +19,7 @@ export default function Homepage() {
         <MouseTrail />
       </div>
       <div id="horizontalCarousel" ><HorizontalScrollCarousel /></div>
+      <Footer/>
 
     </div>
   );

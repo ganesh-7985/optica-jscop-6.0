@@ -104,14 +104,14 @@ const TiltCard = ({ card }) => {
       >
         {isHovered && (
           <div>
-            <p className=" absolute top-2 left-4 z-10 text-xl font-semibold">{card.title}</p>
-            <a href="#" className="text-blue-500 absolute bottom-4 left-4 z-10">View More</a>
+            <p className=" absolute top-2 left-4 z-10 text-xl uppercase font-serif font-semibold">{card.title}</p>
+            <a href="#" className="text-blue-500 absolute bottom-4 left-4 z-10">Know More</a>
           </div>
         )}
 
         <img
           
-          className=" h-[17rem] w-[15rem] bottom-4 inset-5 grid place-content-center rounded-xl bg-white shadow-lg"
+          className=" h-[16rem] w-[15rem] bottom-4 inset-5 grid place-content-center rounded-xl bg-white shadow-lg"
           src={card.url}
           alt={card.title}
         />

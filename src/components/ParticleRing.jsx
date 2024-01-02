@@ -68,9 +68,7 @@ const ParticleRing = () => {
         <p className="text-slate-200 font-extrabold text-lg md:text-xl">
           JIIT STUDENT CONFERENCE FOR OPTICS AND PHOTONICS
         </p>
-        <button className="hover:bg-[#7167e2] text-white font-bold py-2 px-4 rounded-lg border-white border-solid text-lg border" onClick={()=>(<Registation/>)}>
-          REGISTER NOW
-        </button>
+        
       </div>
     </div>
   );
