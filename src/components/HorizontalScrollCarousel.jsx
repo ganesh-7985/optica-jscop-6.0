@@ -1,7 +1,15 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
-import Navbar from "./Navbar";
 import Heading from "./Heading";
+import team1 from '../images/team1.jpeg';
+import team2 from '../images/team2.jpeg';
+import team3 from '../images/team3.jpeg';
+import team4 from '../images/team4.jpeg';
+import team5 from '../images/team5.jpeg';
+import team6 from '../images/team6.jpeg';
+import team7 from '../images/team7.jpeg';
+import team8 from '../images/team8.jpeg';
+
 
 const Example = () => {
   return (
@@ -62,49 +70,49 @@ export default Example;
 
 const cards = [
   {
-    url: 'src/images/team1.jpeg',
+    url: team1,
     title: "Naman Gupta",
     postion:"Technical Head",
     id: 1,
   },
   {
-    url: 'src/images/team2.jpeg',
+    url: team2,
     title: "Ronith Khatri",
     postion:"Web Master",
     id: 2,
   },
   {
-    url: 'src/images/team3.jpeg',
+    url: team3,
     title: "Harsh Sharma",
     postion:"Techinical volunteer",
     id: 3,
   },
   {
-    url: 'src/images/team4.jpeg',
+    url: team4,
     title: "Kavya Baranwal",
     postion:"Techinical volunteer",
     id: 4,
   },
   {
-    url: 'src/images/team5.jpeg',
+    url: team5,
     title: "Aryan Arora",
     postion:"Techinical volunteer",
     id: 5,
   },
   {
-    url: 'src/images/team6.jpeg',
+    url: team6,
     title: "Deepti Jain",
     postion:"Techinical volunteer",
     id: 6,
   },
   {
-    url: 'src/images/team7.jpeg',
+    url: team7,
     title: "Nancy Soni",
     postion:"Techinical volunteer",
     id: 7,
   },
   {
-    url: 'src/images/team8.jpeg',
+    url: team8,
     title: "Aryan Goyel",
     postion:"Technical volunteer",
     id: 8,
