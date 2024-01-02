@@ -1,35 +1,40 @@
 import React, { useState } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Heading from "./Heading";
+import event1 from '../images/event1.jpeg'
+import event2 from '../images/event2.jpeg'
+import event3 from '../images/event3.jpeg'
+import event4 from '../images/event4.jpeg'
+import event5 from '../images/event5.jpeg'
 
 const Example = () => {
   const cards = [
     {
-      url: 'src/images/event1.jpeg',
+      url: event1,
       title: "Code of duty",
       id: 1,
       link:''
     },
     {
-        url: 'src/images/event2.jpeg',
+        url: event2,
       title: "Blind Coding",
       id: 2,
       link:''
     },
     {
-        url: 'src/images/event3.jpeg',
+        url: event3,
       title: "Squid Game",
       id: 3,
       link:''
     },
     {
-        url: 'src/images/event4.jpeg',
+        url: event4,
       title: "Create code crack",
       id: 4,
       link:''
     },
     {
-        url: 'src/images/event5.jpg',
+        url: event5,
       title: "Ideathon",
       id: 5,
       link:''
