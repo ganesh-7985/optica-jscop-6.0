@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import logo1 from '../images/logo1.png'
+import logo1 from '../images/logo1.png';
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -14,16 +14,16 @@ const Navbar = () => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      setNavOpen(true); // Close the mobile menu after clicking
+      setNavOpen(false); // Close the mobile menu after clicking a navigation item
     }
   };
 
   const navItems = [
-    { id: 1, text: 'Home', target: 'particleRing' },
-    { id: 2, text: 'Events', target: 'tiltCard' },
-    { id: 3, text: 'TimeLine', target: 'timeLine' },
-    { id: 4, text: 'Gallery', target: 'mouseTrail' },
-    { id: 5, text: 'About', target: 'horizontalCarousel' },
+    { id: 1, text: 'HOME', target: 'particleRing' },
+    { id: 2, text: 'EVENTS', target: 'tiltCard' },
+    { id: 3, text: 'TIMELINE', target: 'timeLine' },
+    { id: 4, text: 'GALLERY', target: 'mouseTrail' },
+    { id: 5, text: 'TEAM', target: 'horizontalCarousel' },
   ];
 
   useEffect(() => {
@@ -43,13 +43,13 @@ const Navbar = () => {
         <img className='h-16 w-auto text-xl font-bold text-[#7167e2]' src={logo1} alt="Logo" />
 
         <div className="md:hidden">
-          <div onClick={handleNavToggle} className='cursor-pointer'>
+          <button onClick={handleNavToggle} className='cursor-pointer focus:outline-none'>
             {navOpen ? <AiOutlineClose size={24} /> : <AiOutlineMenu size={24} />}
-          </div>
+          </button>
         </div>
 
-        <div className={`md:flex ${navOpen ? 'flex' : 'hidden'} flex-col md:flex-row md:items-center md:space-x-4 md:ml-auto`}>
-          {navItems.map(item => (
+        <div className={`md:flex md:items-center md:space-x-4 md:ml-auto ${navOpen ? 'flex flex-col md:flex-row' : 'hidden'}`}>
+          {navItems.map((item) => (
             <span
               key={item.id}
               className='cursor-pointer p-2 md:p-3 hover:bg-[#7167e2] rounded-lg md:rounded-xl m-1 md:m-2 duration-300 hover:text-black'
