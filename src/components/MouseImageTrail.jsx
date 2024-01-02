@@ -2,7 +2,13 @@ import { useAnimate } from "framer-motion";
 import React, { useRef } from "react";
 import { FiMousePointer } from "react-icons/fi";
 import Heading from "./Heading";
-
+import g1 from "../images/g1.jpeg"
+import g2 from "../images/g2.jpeg"
+import g3 from "../images/g3.jpeg"
+import g4 from "../images/g4.jpeg"
+import g6 from "../images/g6.jpeg"
+import g7 from "../images/g7.jpeg"
+import g8 from "../images/g8.jpeg"
  const MouseTrail = () => {
   return (
 <> 
@@ -11,22 +17,7 @@ import Heading from "./Heading";
       renderImageBuffer={50}
       rotationRange={25}
       images={[
-        "src/images/g1.jpeg",
-        "src/images/g2.jpeg",
-        "src/images/g3.jpeg",
-        "src/images/g4.jpeg",
-       
-        "src/images/g6.jpeg",
-        "src/images/g7.jpeg",
-        "src/images/g8.jpeg",
-        "src/images/g1.jpeg",
-        "src/images/g2.jpeg",
-        "src/images/g3.jpeg",
-        "src/images/g4.jpeg",
-
-        "src/images/g6.jpeg",
-        "src/images/g7.jpeg",
-        "src/images/g8.jpeg"
+       g1,g2,g3,g4,g6,g7,g8
       ]}
     >
       <section className="grid h-screen w-full place-content-center bg-gradient-to-br from-indigo-300 to-violet-300">
