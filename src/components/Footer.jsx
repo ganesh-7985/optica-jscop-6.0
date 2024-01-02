@@ -17,7 +17,7 @@ const Footer = () => {
       </ul>
 
       <ul className="menu">
-        <li><a href="particleRing">Home</a></li>
+        <li><a href="/">Home</a></li>
       </ul>
       
       <p className="copyright"> Made with ❤️ Cod3.</p>
