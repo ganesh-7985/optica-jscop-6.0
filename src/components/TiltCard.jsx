@@ -5,7 +5,7 @@ import event1 from '../images/event1.jpeg'
 import event2 from '../images/event2.jpeg'
 import event3 from '../images/event3.jpeg'
 import event4 from '../images/event4.jpeg'
-import event5 from '../images/event5.jpeg'
+import event5 from '../images/event5.jpg'
 
 const Example = () => {
   const cards = [
