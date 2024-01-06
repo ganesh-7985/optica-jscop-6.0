@@ -17,7 +17,7 @@ import g8 from "../images/g8.jpeg"
       renderImageBuffer={50}
       rotationRange={25}
       images={[
-       g1,g2,g3,g4,g6,g7,g8,g1,g2,g3,g4,g6,g7,g8
+       g1,g2,g3,g4,g6,g7,g8
       ]}
     >
       <section className="grid h-screen w-full place-content-center bg-gradient-to-br from-indigo-300 to-violet-300">
